@@ -1,0 +1,108 @@
+.content-image {
+	width: 100vw;
+	height: 654px;
+	background-image: url(./1660097433_5-funart-pro-p-krasivii-fon-mainkraft-dlya-prevyu-krasivo-6\ 1.png);
+	font-size: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-rules {
+	padding: 20px 0px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.block-text {
+	font-weight: 300;
+	font-size: calc(10px + 4 * (100vw / 1600));
+	position: relative;
+	left: 200px;
+	padding: 0px 20px;
+}
+.block-text span {
+	font-size: calc(14px + 5 * (100vw / 1600));
+	color: #F0A91F;
+	font-weight: 600;
+
+}
+.block-one {
+	background-color: #255A24;
+}
+.block-two {
+	background-color: #2F702A;
+}
+.idea {
+	background: #ffffff;
+	width: 100vw;
+	height: 120px;
+	display: flex;	
+	align-items: center;
+}
+.idea img {
+	width: 64px;
+	height: 64px;
+	margin-left: 130px;
+}
+.idea-header,.idea-text-content {
+	color: #000000;
+}
+.idea-text {
+	margin-left: 50px;
+	font-size: calc(9px + 6 * (100vw / 1600));
+}
+.idea-header {
+	font-size: calc(12px + 13 * (100vw / 1600));
+}
+@media screen and (max-width: 1350px) {
+	.idea-text {
+		margin-left: 30px;
+	}
+	.idea img {
+		width: 64px;
+		height: 64px;
+		margin-left: 90px;
+	}
+	.idea {
+		height: 120px;
+	}
+		.block-text {
+		left: 50px;
+	}
+}
+@media screen and (max-width: 1160px) {
+	.idea-text {
+		margin-left: 20px;
+	}
+
+	.idea img {
+		width: 50px;
+		height: 50px;
+		margin-left: 60px;
+	}
+
+	.idea {
+		height: 100px;
+	}
+
+	.block-text {
+		left: 50px;
+	}
+}
+@media screen and (max-width: 850px) {
+	.idea-text {
+		margin-left: 15px;
+	}
+
+	.idea img {
+		width: 40px;
+		height: 40px;
+		margin-left: 20px;
+	}
+
+	.idea {
+		height: 100px;
+	}
+
+	.block-text {
+		left: 30px;
+	}
+}

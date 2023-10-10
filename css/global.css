@@ -1,0 +1,258 @@
+* {
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-weight: 600;
+}
+.header {
+	background-color: #1B4D25;
+	width: 100vw;
+	height: 80px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 12fr;
+	box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.content-image {
+	font-size: calc(35px + 55 * (100vw / 1600));
+	Background-position: center;
+	background-repeat: no-repeat;
+}
+
+.nav-list {
+	display: flex;
+	height: 100%;
+	align-items: center;
+
+}
+
+.nav-list li {
+	list-style: none;
+	cursor: pointer;
+}
+
+.nav-list li a:hover {
+	background-color: #2a5c33;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	font-size: 19px;
+	padding: 28px 35px;
+	transition: 0.3s ease all;
+}
+
+.nav-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+.nav-logo img {
+	position: relative;
+	bottom: 5px;
+}
+.footer {
+	width: 100vw;
+	padding: 0px 0px;
+	background-color: #474747;
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+}
+.footer-text {
+	font-weight: 300;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.footer-contacts {
+	padding: 10px 30px;
+	background-color: #44743C;
+	font-weight: 300;
+	font-size: 25px;
+	transition: 0.3s ease all;
+	cursor: pointer;
+	position: absolute;
+	right: 30px;
+}
+.footer-contacts:hover {
+	background-color: #55804d;;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+	border-radius: 0.125rem;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0.125rem;
+	background-color: gray;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 0.125rem;
+	background-color: lightgray;
+}
+::selection {
+	background-color: rgba(255, 128, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+	.footer {
+		padding: 10px 0px;
+	}
+
+	.footer-text {
+		font-size: 15px;
+	}
+
+	.footer-contacts {
+		padding: 10px 30px;
+		font-size: 22px;
+		right: 0;
+	}
+	.footer-logo img {
+		transform: scale(0.9)
+	}
+
+}
+@media screen and (max-width: 800px) {
+	.footer {
+		padding: 20px 0px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footer-text {
+		font-size: 13px;
+	}
+
+	.footer-contacts {
+		padding: 7px 20px;
+		font-size: 19px;
+		right: 0;
+	}
+	.footer-logo img {
+		display: none;
+	}
+
+}
+.menu-button {
+	z-index: 5;
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	z-index: 5;
+	overflow: hidden;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	margin-right: 20px;
+	border: 2px solid #093a12;;
+	display: none;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: #1B4D25;
+}
+
+.menu-button::before,
+.menu-button::after {
+	content: "";
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	z-index: 5;
+}
+
+.menu-button::before {
+	top: 30%;
+}
+
+.menu-button::after {
+	top: 67%;
+}
+
+.menu-button.active {
+	border-bottom: none;
+	transition: all 1s ease;
+}
+
+.menu-button.active::before {
+	top: 50%;
+	transform: translate(-50%, 0) rotate(45deg);
+}
+
+.menu-button.active::after {
+	top: 50%;
+	transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.adaptive-menu {
+	background-color: rgba(19, 45, 21, 0.792);
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: fixed;
+	transition: all 0.3s ease;
+	z-index: 2;
+}
+
+.adaptive-menu.active {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+}
+
+.adapt-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	list-style: none;
+	align-items: center;
+}
+
+.adapt-list a {
+	font-size: 40px;
+	color: #ebebeb;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 14px 22px;
+	transition: ease 0.25s all;
+}
+
+.adapt-list a:hover {
+	color: #ffffff;
+	background-color: #284e29;
+}
+
+.adapt-list li {
+	margin-top: 30px;
+}
+@media screen and (max-width: 1100px) {
+	.nav-list{
+		display: none;
+	}
+	.header {
+		height: 50px;
+		align-items: center;
+		justify-items: end;
+		grid-template-columns: 1fr;
+	}
+	.menu-button {
+		display: block;
+	}
+	.nav-logo {
+		display: none;
+	}
+}

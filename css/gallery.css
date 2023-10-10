@@ -1,0 +1,58 @@
+.content-image {
+	width: 100vw;
+	height: 900px;
+	background-image: url(./1640504907_4-abrakadabra-fun-p-fon-dlya-prevyu-dlya-mainkrafta-postroiki-4\ 1.png);
+	font-size: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-photo {
+	background-color: #467E41;
+	width: 100vw;
+	padding: 60px 0px;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+.content-photo img {
+	width: 300px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-width: 1250px) {
+	.content-photo img {
+			transform: scale(0.9)
+		}
+.content-photo {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+}
+@media screen and (max-width: 930px) {
+	.content-photo img {
+		transform: scale(0.8)
+	}
+
+	.content-photo {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		padding: 50px 0px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.content-photo img {
+		transform: scale(0.6)
+	}
+
+	.content-photo {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		padding: 30px 0px;
+	}
+}

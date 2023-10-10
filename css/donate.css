@@ -1,0 +1,97 @@
+.content-image {
+	width: 100vw;
+	height: 643px;
+	background-image: url(./1653684483_5-celes-club-p-fon-mainkraft-postroiki-krasivie-7\ 1\ \(2\).png);
+	font-size: calc(35px + 55 * (100vw / 1600));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.donate-list {
+	width: 100vw;
+	padding: 50px 0px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 10px;
+	justify-items: center;
+}
+
+.donate-card {
+	height: 500px;
+	width: 250px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-header {
+	width: 100%;
+	height: 45px;
+	background-color: #2F702A;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-price {
+	color: #000000;
+	font-size: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+.card-button {
+	background-color: #b53737;
+	width: 180px;
+	height: 50px;
+	flex-grow: 1;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 300;
+	cursor: pointer;
+	transition: 0.3s ease all;
+	margin-top: 10px;
+}
+
+.card-image img {
+	width: 250px;
+	transition: 0.3s ease all;
+}
+.card-image img:hover {
+	transform: scale(1.05);
+}
+
+.card-button:hover {
+	background-color: #9b1515;
+}
+@media screen and (max-width: 1200px) {
+	.donate-list {
+		padding: 40px 0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 15px;
+	}
+	.donate-card {
+		transform: scale(0.85)
+	}
+}
+@media screen and (max-width: 500px) {
+	.donate-list {
+		padding: 10px 0px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 10px;
+	}
+	.donate-card {
+		transform: scale(0.8)
+	}
+}
